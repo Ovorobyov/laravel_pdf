@@ -43,6 +43,6 @@ class MaatwebsiteController extends Controller
                 iconv("windows-1251", "UTF-8", 'Комментарий пожтверждения'),
                 iconv("windows-1251", "UTF-8", 'Контроль')
             ]);
-            return Excel::download($export, 'InOuts.pdf', \Maatwebsite\Excel\Excel::MPDF);
+            return Excel::download($export, 'InOuts.pdf', \Maatwebsite\Excel\Excel::DOMPDF);
     }
 }
